@@ -6,6 +6,7 @@ services:
     maxmemoryPolicy: noeviction
     ipAllowList: []
     plan: free
+    previewPlan: free
 
   # Let's create our background worker
   - type: worker
@@ -16,6 +17,7 @@ services:
     startCommand: bundle exec sidekiq -r ./main.rb
     autoDeploy: false
     plan: starter
+    previewPlan: starter
     envVars:
       - key: REDIS_URL
         fromService:
@@ -32,6 +34,7 @@ services:
     startCommand: bundle exec ruby main.rb
     autoDeploy: false
     plan: free
+    previewPlan: free
     envVars:
       - key: REDIS_URL
         fromService:
