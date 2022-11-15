@@ -6,7 +6,7 @@ services:
     maxmemoryPolicy: noeviction
     ipAllowList: []
     plan: free
-    previewPlan: free
+    previewPlan: starter
 
   # Let's create our background worker
   - type: worker
