@@ -14,7 +14,7 @@ services:
     region: ohio
     buildCommand: bundle install
     startCommand: bundle exec sidekiq -r ./main.rb
-    autoDeploy: false
+    autoDeploy: starter
     plan: free
     envVars:
       - key: REDIS_URL
