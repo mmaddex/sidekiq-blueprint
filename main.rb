@@ -9,8 +9,10 @@ $redis = Redis.new
 
 class SinatraWorker
   include Sidekiq::Worker
+  puts "SIDEKICK WORKER - #{ENV['RENDER_INSTANCE_ID']}"
 
   def perform(msg = "lulz you forgot a msg!")
+    puts "SIDEKICK PERFORM - #{ENV['RENDER_INSTANCE_ID']}"
     $redis.lpush("sinkiq-example-messages", msg)
   end
 end
