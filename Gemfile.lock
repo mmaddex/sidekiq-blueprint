@@ -41,6 +41,7 @@ PLATFORMS
 
 DEPENDENCIES
   redis (~> 4.1)
+  shrine (~> 3.4)
   shrine-blurhash
   sidekiq (~> 5.2)
   sinatra (~> 2.0)

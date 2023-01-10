@@ -13,3 +13,5 @@ gem "redis", "~> 4.1"
 gem "sidekiq", "~> 5.2"
 
 gem "shrine-blurhash"
+
+gem "shrine", "~> 3.4"
