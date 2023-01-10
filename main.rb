@@ -4,8 +4,13 @@ require 'sinatra'
 require 'sidekiq'
 require 'redis'
 require 'sidekiq/api'
+require 'shrine-blurhash'
 
 $redis = Redis.new
+
+class PictureUploader < Shrine
+    plugin :blurhash
+end
 
 class SinatraWorker
   include Sidekiq::Worker
