@@ -4,7 +4,7 @@ require 'sinatra'
 require 'sidekiq'
 require 'redis'
 require 'sidekiq/api'
-require 'shrine-blurhash'
+require 'blurhash'
 
 $redis = Redis.new
 
