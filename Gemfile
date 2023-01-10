@@ -11,3 +11,5 @@ gem "sinatra", "~> 2.0"
 gem "redis", "~> 4.1"
 
 gem "sidekiq", "~> 5.2"
+
+gem "shrine-blurhash"
